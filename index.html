@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="caixaAjuda">
+                <button id="botaoVoltar">VOLTAR</button>
+                <div class="caixaAjudaConteudo">
+                    
+                <h1 id="tituloprincipal"><b>Sobre o Codificador</b></h1>
+                <h2 id="subtitulo"><b>Cifra de César</b></h2>
+                    <p>A Cifra de César, também conhecida como cifra de troca, código de César ou troca de César, é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes.</p>
+                <h2><b>Como usar?</b></h2>
+                    <p>Digite a mensagem que quer codificar e em seguida defina a chave. Cada caractere de sua mensagem será substituído por outro a depender da chave. <br> Extra: caracteres especiais e números não serão alterados.</p>
+                    <img src="img/CifraDeCesarExemplo.png" id="cifraExemplo">
+                <h2 id="subtitulo"><b>Base64</b></h2>
+                    <p>Base64 é um algoritmo de codificação (encoding) que permite transformar qualquer caractere de qualquer idioma em um alfabeto que consiste em letras latinas, dígitos e sinais. Com isso podemos converter caracteres especiais como os logogramas chineses, emoji e até imagens em uma sequência “legível” (para qualquer computador), que pode ser salvo e/ou transferido para qualquer outro lugar. É utilizado frequentemente para transmitir dados binários por meio de transmissões que lidam apenas com texto, como, por exemplo, para enviar imagens e arquivos em anexo por e-mail.</p>
+                </div>
+            </div>
+
+            <div class="caixaPrincipal">
+            <button id="botaoComoUsar">COMO USAR</button>
+            <h1 id="tituloprincipal">Codificar Cifra de Cesar / Base64</h1>
+            <form action="#">
+                <textarea name="mensagem" id="mensagem" cols="50" rows="4"
+                    placeholder="Digite sua mensagem..."></textarea>
+
+                <label id="selecione" for="select"></label>
+                <select name="select" class="select" id="select">
+                    <option value="selecione" disabled selected>Selecione a criptografia</option>
+                    <option value="base64">Base64</option>
+                    <option value="cifra">Cifra de césar</option>
+                </select>
+                <div class="chaveContainer">
+                    <label class="chave" for="range">Defina a Chave</label>
+                    <div class="slider-range">
+                        <input type="range" value="1" min="1" max="26" class="range" id="range"
+                            oninput="rangenumber.value=value" />
+                        <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
+                    </div>
+                </div>
+
+                <div class="radioButton">
+                    <div class="radio">
+                        <input type="radio" name="codificar" id="codificar" value="codificar" checked />
+                        <label for="codificar">CODIFICAR</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="codificar" id="decodificar" value="decodificar" />
+                        <label for="decodificar">DECODIFICAR</label>
+                    </div>
+                </div>
+
+                <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly
+                    placeholder="Resultado"></textarea>
+                <div class="btn">
+                    <button id="botaoCodificar">CODIFICAR MENSAGEM</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
