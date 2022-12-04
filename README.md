@@ -11,5 +11,6 @@ Codificador e decodificador de Base64 e Cifra de César.
 - **Ignorar caracteres especiais e números.**
 
 ## Links:
-[Link para a página do projeto.]()
-[Link para o GitHub do projeto.](https://github.com/xdanrj/codificador-m2)
+[Página do projeto](https://xdanrj.github.io/codificador-m2/)
+
+[GitHub do projeto](https://github.com/xdanrj/codificador-m2)
