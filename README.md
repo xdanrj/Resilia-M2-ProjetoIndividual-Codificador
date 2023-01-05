@@ -11,6 +11,6 @@ Codificador e decodificador de Base64 e Cifra de César.
 - **Ignorar caracteres especiais e números.**
 
 ## Links:
-[Página do projeto](https://xdanrj.github.io/codificador-m2/)
+[Página do projeto](https://xdanrj.github.io/Resilia-M2-ProjetoIndividual-Codificador/)
 
 [GitHub do projeto](https://github.com/xdanrj/Resilia-M2-ProjetoIndividual-Codificador)
